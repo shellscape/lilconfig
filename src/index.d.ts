@@ -30,7 +30,6 @@ export interface OptionsSync extends OptionsBase {
 	loaders?: LoadersSync;
 	transform?: TransformSync;
 }
-export declare const defaultLoadersSync: LoadersSync;
 export declare const defaultLoaders: Loaders;
 type ClearCaches = {
 	clearLoadCache: () => void;
@@ -45,11 +44,3 @@ export declare function lilconfig(
 	name: string,
 	options?: Partial<Options>,
 ): AsyncSearcher;
-type SyncSearcher = {
-	search(searchFrom?: string): LilconfigResult;
-	load(filepath: string): LilconfigResult;
-} & ClearCaches;
-export declare function lilconfigSync(
-	name: string,
-	options?: OptionsSync,
-): SyncSearcher;

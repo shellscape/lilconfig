@@ -1,7 +1,10 @@
 {
-  "name": "lilconfig",
-  "version": "3.1.1",
+  "name": "@shellscape/lilconfig",
+  "version": "3.2.0",
   "description": "A zero-dependency alternative to cosmiconfig",
+  "publishConfig": {
+    "private": false
+  },
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "scripts": {
